@@ -1,0 +1,15 @@
+[package]
+name = "prime-api"
+version = "0.1.0"
+authors = ["Ryosuke Hayashi <hayashi@hayashikun.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+wascc-actor = "0.7"
+wascc-codec = "0.7"
+serde = { version = "1.0.104", features = ["derive"]}
